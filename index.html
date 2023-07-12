@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form learning</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <script async src="./index.js"></script>
+  </head>
+  <body>
+    <section class="form-container">
+      <form class="contact-form" action="">
+        <div class="fildset">
+          <label for="name">
+            <div>Nombre</div>
+            <input id="name" name="name" type="text" />
+          </label>
+        </div>
+        <div class="fildset">
+          <label for="options"
+            >De lo aprendido hasta ahora, ¿qué tema te gustó más?
+          </label>
+          <select id="option" name="options">
+            <option value="html">Html</option>
+            <option value="css">Css</option>
+            <option value="javascript">JavaScript</option>
+            <option value="typescript">TypeScript</option>
+          </select>
+        </div>
+        <div class="fildset-values">
+          <label for="radio">Preferís estudiar</label>
+          <div class="fildset-content">
+            <label
+              ><input type="radio" name="radio" value="dia" /> De dia</label
+            >
+            <label
+              ><input type="radio" name="radio" value="noche" /> De noche</label
+            >
+          </div>
+        </div>
+        <div class="checkbox-container">
+          <label>¿Cuales fueron los temas más complejos hasta ahora?</label>
+          <div class="container-checkbox">
+            <div>
+              <input
+                type="checkbox"
+                id="scales"
+                name="mosnt-diff-subjects"
+                value="typeScript"
+              />
+              <label for="typeScript"> TypeScript</label>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                id="horns"
+                name="mosnt-diff-subjects"
+                value="promesas"
+              />
+              <label for="promesas">Promesas</label>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                id="horns"
+                name="mosnt-diff-subjects"
+                value="clases"
+              />
+              <label for="clases">Clases</label>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                id="horns"
+                name="mosnt-diff-subjects"
+                value="funciones"
+              />
+              <label for="funciones">Funciones</label>
+            </div>
+          </div>
+        </div>
+        <div class="button">
+          <button class="button__element">Enviar</button>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>
